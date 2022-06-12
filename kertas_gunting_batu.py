@@ -14,7 +14,7 @@ score_user_kalah = 0
 score_draw = 0
 i = 1
 from random import randint
-
+from time import sleep
 print('Simpel program\n1.Kertas, 2.Gunting, 3.Batu')
 while i <= 3:
     pilih_user = int(input('\nMasukan pilihanmu: '))
@@ -51,7 +51,7 @@ while i <= 3:
             score_user_menang += 1
 
     i = i+1
-
+sleep(1)
 print(f"""
 Menang = {score_user_menang}
 Kalah = {score_user_kalah}
